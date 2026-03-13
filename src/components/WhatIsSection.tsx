@@ -1,5 +1,5 @@
 import { ShieldCheck, Ear, Wrench, CalendarHeart } from "lucide-react";
-import mariaImg from "@/assets/samtale.jpg";
+import parsamtaleImg from "@/assets/parsamtale.jpg";
 
 const benefits = [
   {
