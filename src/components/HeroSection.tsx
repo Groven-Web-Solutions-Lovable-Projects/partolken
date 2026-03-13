@@ -49,20 +49,9 @@ const HeroSection = () => {
             </div>
 
             {/* Skimmable quotes */}
-            <div className="flex flex-wrap gap-2 pt-1">
-              {[
-                "«Vi har aldri hatt det bedre»",
-                "«Et mirakel for forholdet vårt»",
-                "«Forandring allerede etter 2 uker»",
-              ].map((q, i) => (
-                <span
-                  key={i}
-                  className="text-xs text-muted-foreground bg-card border border-border rounded-full px-3 py-1.5 italic"
-                >
-                  {q}
-                </span>
-              ))}
-            </div>
+            <p className="text-xs text-muted-foreground/70 italic pt-0">
+              «Vi har aldri hatt det bedre» · «Et mirakel for forholdet vårt» · «Forandring etter 2 uker»
+            </p>
           </div>
           <div className="relative animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             <div className="rounded-2xl overflow-hidden shadow-2xl">
