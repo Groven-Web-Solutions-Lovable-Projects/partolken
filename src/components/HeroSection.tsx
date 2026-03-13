@@ -13,9 +13,6 @@ const HeroSection = () => {
             <p className="text-lg text-foreground leading-relaxed max-w-lg">
               Partolken hjelper par med å forstå hverandre bedre, bryte fastlåste mønstre og finne tilbake til nærhet, trygghet og kjærlighet.
             </p>
-            <p className="text-sm text-muted-foreground italic border-l-2 border-secondary pl-4">
-              Par beskriver sterkere kommunikasjon, mer ro og forhold som har blitt reddet.
-            </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#kontakt"
