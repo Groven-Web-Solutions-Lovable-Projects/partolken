@@ -42,8 +42,9 @@ const HeroSection = () => {
                   <img
                     key={i}
                     src={src}
-                    alt=""
+                    alt="Fornøyd par"
                     className="w-10 h-10 rounded-full border-2 border-background object-cover"
+                    loading="eager"
                   />
                 ))}
               </div>
