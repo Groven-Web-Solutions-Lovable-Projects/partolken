@@ -9,7 +9,7 @@ const stats = [
 
 const SocialProofBanner = () => {
   return (
-    <section className="py-12 md:py-16 bg-card border-b border-border">
+    <section className="py-12 md:py-16 bg-gradient-to-b from-secondary/10 to-secondary/5 border-b border-secondary/20">
       <div className="container">
         <div className="max-w-4xl mx-auto space-y-10">
           {/* Quote with animated heart */}
@@ -30,10 +30,10 @@ const SocialProofBanner = () => {
             {stats.map((stat, i) => (
               <div
                 key={i}
-                className="text-center space-y-2 p-5 rounded-2xl bg-background border border-border/60 shadow-sm hover-scale"
+                className="text-center space-y-2 p-5 rounded-2xl bg-background/80 backdrop-blur-sm border border-secondary/30 shadow-sm hover:shadow-md hover:border-secondary/50 transition-all duration-300"
               >
-                <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center mx-auto">
-                  <stat.icon className="w-5 h-5 text-secondary-foreground" />
+                <div className="w-10 h-10 rounded-xl bg-secondary/25 flex items-center justify-center mx-auto">
+                  <stat.icon className="w-5 h-5 text-primary" />
                 </div>
                 <div className="text-2xl md:text-3xl font-bold text-primary">{stat.value}</div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
