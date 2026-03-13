@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
-          <div className="space-y-6 md:space-y-8 animate-fade-in-up">
+          <div className="space-y-5 md:space-y-6 animate-fade-in-up">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-primary tracking-tight">
               Når forholdet har låst seg, finnes det en vei tilbake.
             </h1>
