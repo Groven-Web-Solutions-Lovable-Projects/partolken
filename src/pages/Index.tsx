@@ -31,7 +31,6 @@ const Index = () => {
       <FinalCTASection />
       <ContactSection />
       <Footer />
-      <Footer />
     </div>
   );
 };

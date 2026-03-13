@@ -3,10 +3,10 @@ const FinalCTASection = () => {
     <section className="py-16 md:py-24 bg-primary">
       <div className="container max-w-2xl text-center space-y-8">
         <h2 className="text-2xl md:text-4xl font-bold text-primary-foreground leading-tight">
-          Hver dag dere venter, vokser avstanden mellom dere
+          Ikke vent til avstanden har vokst seg enda større
         </h2>
         <p className="text-primary-foreground/80 leading-relaxed text-lg">
-          Dere fortjener ikke å ligge våkne om natten og lure på om det er håp. En kort samtale kan være alt som skal til for å snu retningen.
+          Jo tidligere dere tar tak i det som er vanskelig, jo større er sjansen for å finne tilbake til hverandre. Book en gratis 15 min samtale og få en trygg første prat om hva dere står i — og hva som kan være riktig neste steg.
         </p>
         <a
           href="#kontakt"
