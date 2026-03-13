@@ -1,33 +1,22 @@
 const FinalCTASection = () => {
   return (
-    <section id="kontakt" className="py-16 md:py-24 bg-primary">
+    <section className="py-16 md:py-24 bg-primary">
       <div className="container max-w-2xl text-center space-y-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground">
-          Ta første steg i dag
+        <h2 className="text-2xl md:text-4xl font-bold text-primary-foreground leading-tight">
+          Hver dag dere venter, vokser avstanden mellom dere
         </h2>
-        <p className="text-primary-foreground/80 leading-relaxed">
-          Enten dere ønsker hjelp med en gang, vil lese Hjertestarter eller bare vil følge med og lære mer — det viktigste er å starte et sted.
+        <p className="text-primary-foreground/80 leading-relaxed text-lg">
+          Dere fortjener ikke å ligge våkne om natten og lure på om det er håp. En kort samtale kan være alt som skal til for å snu retningen.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#kontakt"
-            className="bg-accent text-accent-foreground px-7 py-3.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
-          >
-            Book gratis 15-min samtale
-          </a>
-          <a
-            href="#hjertestarter"
-            className="bg-card text-foreground px-7 py-3.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
-          >
-            Bestill Hjertestarter
-          </a>
-          <a
-            href="#nyhetsbrev"
-            className="border-2 border-primary-foreground text-primary-foreground px-7 py-3.5 rounded-lg font-semibold hover:bg-primary-foreground hover:text-primary transition-colors"
-          >
-            Meld deg på nyhetsbrev
-          </a>
-        </div>
+        <a
+          href="#kontakt"
+          className="inline-block bg-accent text-accent-foreground px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity shadow-md text-lg"
+        >
+          Book gratis 15-min samtale →
+        </a>
+        <p className="text-primary-foreground/60 text-sm">
+          Uforpliktende · Ingen venteliste · Svar innen 24 timer
+        </p>
       </div>
     </section>
   );

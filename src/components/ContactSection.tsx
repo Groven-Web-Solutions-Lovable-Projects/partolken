@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Send, Clock, ShieldCheck, Phone } from "lucide-react";
+import mariaImg from "@/assets/maria-bok.jpg";
 
 const ContactSection = () => {
   const [name, setName] = useState("");
@@ -16,43 +17,56 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="kontakt" className="py-16 md:py-24 bg-card">
-      <div className="container max-w-5xl">
-        <div className="grid md:grid-cols-2 gap-12">
+    <section id="kontakt" className="py-20 md:py-28 bg-background">
+      <div className="container max-w-6xl">
+        <div className="text-center max-w-2xl mx-auto mb-14 space-y-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            Kontakt oss
+          </h2>
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            Vi er her for dere. Ta kontakt, så finner vi ut hvordan vi best kan hjelpe.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+          {/* Maria image + info */}
           <div className="space-y-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary">
-              Book en gratis 15-minutters samtale
-            </h2>
-            <p className="text-foreground leading-relaxed">
-              Fortell litt om situasjonen deres, så tar Maria kontakt innen 24 timer for å avtale en uforpliktende samtale.
-            </p>
-            <div className="space-y-4 pt-2">
+            <div className="relative">
+              <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-secondary/30">
+                <img
+                  src={mariaImg}
+                  alt="Maria fra Partolken"
+                  className="w-full h-[420px] object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary/20 rounded-full blur-2xl" />
+              <div className="absolute -top-4 -left-4 w-16 h-16 bg-secondary/15 rounded-full blur-xl" />
+            </div>
+            <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-foreground">
-                <Clock className="w-5 h-5 text-accent shrink-0" />
+                <Clock className="w-5 h-5 text-secondary shrink-0" />
                 <span>Svar innen 24 timer</span>
               </div>
               <div className="flex items-center gap-3 text-foreground">
-                <ShieldCheck className="w-5 h-5 text-accent shrink-0" />
+                <ShieldCheck className="w-5 h-5 text-secondary shrink-0" />
                 <span>Helt uforpliktende — ingen venteliste</span>
               </div>
               <div className="flex items-center gap-3 text-foreground">
-                <Phone className="w-5 h-5 text-accent shrink-0" />
+                <Phone className="w-5 h-5 text-secondary shrink-0" />
                 <span>15 min gratis samtale på telefon eller video</span>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground italic">
-              Over 30 par har allerede tatt dette steget — mange beskriver det som vendepunktet.
-            </p>
           </div>
 
-          <div className="bg-background rounded-2xl p-6 md:p-8 border border-border shadow-sm">
+          {/* Contact form */}
+          <div className="bg-card rounded-2xl p-6 md:p-8 border border-border shadow-sm">
             {submitted ? (
               <div className="flex flex-col items-center justify-center h-full text-center space-y-4 py-8">
                 <div className="w-16 h-16 rounded-full bg-secondary/30 flex items-center justify-center">
-                  <ShieldCheck className="w-8 h-8 text-primary" />
+                  <ShieldCheck className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-xl font-bold text-primary">Takk for henvendelsen!</h3>
-                <p className="text-muted-foreground">Maria tar kontakt med deg innen 24 timer.</p>
+                <h3 className="text-xl font-bold text-foreground">Takk for henvendelsen!</h3>
+                <p className="text-muted-foreground">Vi tar kontakt med deg innen 24 timer.</p>
                 <button
                   onClick={() => setSubmitted(false)}
                   className="text-sm text-accent underline underline-offset-4"
@@ -71,7 +85,7 @@ const ContactSection = () => {
                     placeholder="Ditt navn"
                     required
                     maxLength={100}
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary"
                   />
                 </div>
                 <div>
@@ -83,7 +97,7 @@ const ContactSection = () => {
                     placeholder="din@epost.no"
                     required
                     maxLength={255}
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary"
                   />
                 </div>
                 <div>
@@ -96,7 +110,7 @@ const ContactSection = () => {
                     placeholder="F.eks. «Vi sliter med kommunikasjonen og ønsker hjelp»"
                     rows={3}
                     maxLength={1000}
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary resize-none"
                   />
                 </div>
                 <button
