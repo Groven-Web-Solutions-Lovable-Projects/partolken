@@ -39,10 +39,10 @@ const WhatIsSection = () => {
             Det finnes en vei videre
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
-            Hva gjør Partolken for dere?
+            Partolken hjelper dere å finne tilbake til hverandre
           </h2>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            Slik hjelper vi dere med å finne tilbake til hverandre.
+            Gjennom trygge samtaler og konkrete verktøy gir vi dere støtten som trengs for å bygge en sterkere relasjon – steg for steg.
           </p>
         </div>
 
