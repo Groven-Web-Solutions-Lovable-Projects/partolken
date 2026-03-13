@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Check } from "lucide-react";
-import samtaleImg from "@/assets/samtale.jpg";
+import recognitionArt from "@/assets/recognition-art.jpg";
 
 const problems = [
   {
@@ -75,7 +75,7 @@ const RecognitionSection = () => {
           <div className="relative hidden md:block">
             <div className="rounded-3xl overflow-hidden shadow-xl">
               <img
-                src={samtaleImg}
+                src={recognitionArt}
                 alt="Par i samtale"
                 className="w-full h-[500px] object-cover"
               />
