@@ -17,10 +17,10 @@ const NewsletterSection = () => {
     <section className="py-16 md:py-24 bg-primary">
       <div className="container max-w-2xl text-center space-y-8">
         <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground">
-          Få gratis råd for et sterkere forhold
+          Få 5 spørsmål som avslører om forholdet kan reddes
         </h2>
         <p className="text-primary-foreground/80 leading-relaxed">
-          Meld deg på og få innsikt, refleksjoner og konkrete råd om relasjoner, kommunikasjon og hvordan dere kan ta bedre vare på forholdet.
+          Meld deg på og få en gratis guide med refleksjonsspørsmål, pluss ukentlige råd om relasjoner og kommunikasjon.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
           <div className="relative flex-1">

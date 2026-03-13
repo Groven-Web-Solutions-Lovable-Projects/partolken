@@ -30,7 +30,7 @@ const RecognitionSection = () => {
           href="#kontakt"
           className="inline-block bg-accent text-accent-foreground px-7 py-3.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
         >
-          Få gratis starthjelp
+          Book en gratis samtale →
         </a>
       </div>
     </section>
