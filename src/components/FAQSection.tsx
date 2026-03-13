@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "Hva er forskjellen på partolking og parterapi?",
-    a: "Partolking er en praktisk og handlingsrettet metode som fokuserer på å gi dere konkrete verktøy og forståelse for dynamikken i forholdet. Det handler om å skape endring i hverdagen, ikke bare innsikt.",
+    a: "Partolking går lenger enn tradisjonell parterapi. Vi benytter praktiske verktøy som kartlegger hvem dere er i møte med hverandre og hva dere trenger for å være dere selv sammen. Vi setter strek ved – ikke over – det som har vært, og jobber frem til en ny start i stedet for å grave i gammelt grums. Vi jobber handlingsrettet der vi guider og trener dere ut ifra konkrete tiltak som gir resultater.",
   },
   {
     q: "Hvem passer partolking for?",
