@@ -1,12 +1,12 @@
 import { ShieldCheck, Ear, Wrench, CalendarHeart } from "lucide-react";
-import mariaImg from "@/assets/samtale.jpg";
+import parsamtaleImg from "@/assets/parsamtale.jpg";
 
 const benefits = [
   {
     icon: Ear,
     title: "Noen som virkelig lytter",
     description:
-      "Maria lytter uten å dømme – og hjelper dere å høre hverandre på nytt.",
+      "Vi lytter uten å dømme – og hjelper dere å høre hverandre på nytt.",
   },
   {
     icon: ShieldCheck,
@@ -42,7 +42,7 @@ const WhatIsSection = () => {
             Dere trenger ikke ha det slik.
           </h2>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            Slik hjelper Partolken dere med å finne tilbake til hverandre.
+            Slik hjelper vi dere med å finne tilbake til hverandre.
           </p>
         </div>
 
@@ -52,8 +52,8 @@ const WhatIsSection = () => {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-secondary/30">
               <img
-                src={mariaImg}
-                alt="Maria i samtale med par"
+                src={parsamtaleImg}
+                alt="Partolken i samtale med par"
                 className="w-full h-[420px] object-cover"
               />
             </div>
