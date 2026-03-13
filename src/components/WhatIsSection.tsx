@@ -52,8 +52,8 @@ const WhatIsSection = () => {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-secondary/30">
               <img
-                src={mariaImg}
-                alt="Maria i samtale med par"
+                src={parsamtaleImg}
+                alt="Partolken i samtale med par"
                 className="w-full h-[420px] object-cover"
               />
             </div>
