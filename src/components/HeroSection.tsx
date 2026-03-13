@@ -73,6 +73,9 @@ const HeroSection = () => {
                 src={heroImage}
                 alt="Trygg samtalesituasjon med par"
                 className="w-full h-[350px] md:h-[480px] object-cover"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
             <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-secondary rounded-full opacity-40 -z-10" />
