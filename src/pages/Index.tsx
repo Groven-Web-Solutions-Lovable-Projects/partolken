@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import SocialProofBanner from "@/components/SocialProofBanner";
 import RecognitionSection from "@/components/RecognitionSection";
 import WhatIsSection from "@/components/WhatIsSection";
-import WhyChooseSection from "@/components/WhyChooseSection";
+
 import TestimonialsSection from "@/components/TestimonialsSection";
 import StartpakkeSection from "@/components/StartpakkeSection";
 import HjertestarterSection from "@/components/HjertestarterSection";
