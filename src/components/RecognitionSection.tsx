@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Check } from "lucide-react";
-import samtaleImg from "@/assets/samtale.jpg";
+import recognitionArt from "@/assets/recognition-art.jpg";
 
 const problems = [
   {
