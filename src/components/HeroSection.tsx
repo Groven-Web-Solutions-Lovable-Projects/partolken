@@ -35,23 +35,30 @@ const HeroSection = () => {
             </div>
 
             {/* Trust bar */}
-            <div className="flex items-center gap-3 pt-2">
-              <div className="flex -space-x-2">
-                {[...Array(5)].map((_, i) => (
-                  <div
+            <div className="flex items-center gap-4 pt-2">
+              <div className="flex -space-x-3">
+                {avatars.map((src, i) => (
+                  <img
                     key={i}
-                    className="w-8 h-8 rounded-full bg-secondary/60 border-2 border-background flex items-center justify-center"
-                  >
-                    <Users className="w-4 h-4 text-primary/70" />
+                    src={src}
+                    alt=""
+                    className="w-10 h-10 rounded-full border-2 border-background object-cover"
+                  />
+                ))}
+              </div>
+              <div className="flex flex-col">
+                <div className="flex items-center gap-1.5">
+                  <div className="flex items-center gap-0.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+                    ))}
                   </div>
-                ))}
+                  <span className="text-sm font-bold text-foreground">5.0</span>
+                </div>
+                <span className="text-sm text-muted-foreground">
+                  Anbefalt av <span className="font-semibold text-foreground">30+</span> fornøyde par
+                </span>
               </div>
-              <div className="flex items-center gap-0.5">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
-                ))}
-              </div>
-              <span className="text-sm text-muted-foreground">Anbefalt av par over hele Norge</span>
             </div>
 
             {/* Skimmable quotes */}
