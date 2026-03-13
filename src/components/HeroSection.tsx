@@ -58,7 +58,7 @@ const HeroSection = () => {
                   <span className="text-sm font-bold text-foreground">5.0</span>
                 </div>
                 <span className="text-sm text-muted-foreground">
-                  Anbefalt av <span className="font-semibold text-foreground">30+</span> fornøyde par
+                  Anbefalt av <span className="font-semibold text-foreground">3000+</span> fornøyde par
                 </span>
               </div>
             </div>
