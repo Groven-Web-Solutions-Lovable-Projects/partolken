@@ -5,16 +5,13 @@ const HeroSection = () => {
   return (
     <section className="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden">
       <div className="container">
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div className="space-y-6 md:space-y-8 animate-fade-in-up">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-center">
+          <div className="space-y-5 md:space-y-6 animate-fade-in-up">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-primary tracking-tight">
               Når forholdet har låst seg, finnes det en vei tilbake.
             </h1>
             <p className="text-lg text-foreground leading-relaxed max-w-lg">
               Partolken hjelper par med å forstå hverandre bedre, bryte fastlåste mønstre og finne tilbake til nærhet, trygghet og kjærlighet.
-            </p>
-            <p className="text-sm text-muted-foreground italic border-l-2 border-secondary pl-4">
-              Par beskriver sterkere kommunikasjon, mer ro og forhold som har blitt reddet.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -52,20 +49,9 @@ const HeroSection = () => {
             </div>
 
             {/* Skimmable quotes */}
-            <div className="flex flex-wrap gap-2 pt-1">
-              {[
-                "«Vi har aldri hatt det bedre»",
-                "«Et mirakel for forholdet vårt»",
-                "«Forandring allerede etter 2 uker»",
-              ].map((q, i) => (
-                <span
-                  key={i}
-                  className="text-xs text-muted-foreground bg-card border border-border rounded-full px-3 py-1.5 italic"
-                >
-                  {q}
-                </span>
-              ))}
-            </div>
+            <p className="text-xs text-muted-foreground/70 italic pt-0">
+              «Vi har aldri hatt det bedre» · «Et mirakel for forholdet vårt» · «Forandring etter 2 uker»
+            </p>
           </div>
           <div className="relative animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             <div className="rounded-2xl overflow-hidden shadow-2xl">
