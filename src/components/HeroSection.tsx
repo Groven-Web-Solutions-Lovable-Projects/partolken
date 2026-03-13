@@ -24,7 +24,7 @@ const HeroSection = () => {
                 href="#kontakt"
                 className="bg-accent text-accent-foreground px-7 py-3.5 rounded-lg text-base font-semibold hover:opacity-90 transition-opacity text-center"
               >
-                Bestill gratis starthjelp
+                Book gratis 15-min samtale
               </a>
               <a
                 href="#hjertestarter"
@@ -33,6 +33,7 @@ const HeroSection = () => {
                 Les om Hjertestarter
               </a>
             </div>
+            <p className="text-xs text-muted-foreground">Uforpliktende · Svar innen 24 timer · Ingen venteliste</p>
 
             {/* Trust bar */}
             <div className="flex items-center gap-4 pt-6">

@@ -10,10 +10,10 @@ const FinalCTASection = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#"
+            href="#kontakt"
             className="bg-accent text-accent-foreground px-7 py-3.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
           >
-            Bestill gratis starthjelp
+            Book gratis 15-min samtale
           </a>
           <a
             href="#hjertestarter"

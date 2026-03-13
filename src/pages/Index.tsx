@@ -1,11 +1,13 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import SocialProofBanner from "@/components/SocialProofBanner";
 import RecognitionSection from "@/components/RecognitionSection";
 import WhatIsSection from "@/components/WhatIsSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import StartpakkeSection from "@/components/StartpakkeSection";
 import HjertestarterSection from "@/components/HjertestarterSection";
+import ContactSection from "@/components/ContactSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import ForedragSection from "@/components/ForedragSection";
 import AboutMariaSection from "@/components/AboutMariaSection";
@@ -18,12 +20,14 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
+      <SocialProofBanner />
       <RecognitionSection />
       <WhatIsSection />
       <WhyChooseSection />
       <TestimonialsSection />
       <StartpakkeSection />
       <HjertestarterSection />
+      <ContactSection />
       <NewsletterSection />
       <ForedragSection />
       <AboutMariaSection />
