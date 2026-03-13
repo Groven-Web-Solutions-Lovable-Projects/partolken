@@ -35,7 +35,7 @@ const HeroSection = () => {
             </div>
 
             {/* Trust bar */}
-            <div className="flex items-center gap-4 pt-2">
+            <div className="flex items-center gap-4 pt-6">
               <div className="flex -space-x-3">
                 {avatars.map((src, i) => (
                   <img
