@@ -1,8 +1,8 @@
 import { Heart, Users, Calendar, Award, Sparkles } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: "30+", label: "Par hjulpet" },
-  { icon: Calendar, value: "10+", label: "Års erfaring" },
+  { icon: Users, value: "3000+", label: "Par hjulpet" },
+  { icon: Calendar, value: "15+", label: "Års erfaring" },
   { icon: Heart, value: "95%", label: "Anbefaler videre" },
   { icon: Award, value: "5.0", label: "Snittkarakter" },
 ];
