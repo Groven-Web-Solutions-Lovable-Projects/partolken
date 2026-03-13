@@ -42,7 +42,7 @@ const WhatIsSection = () => {
             Dere trenger ikke ha det slik.
           </h2>
           <p className="text-muted-foreground leading-relaxed text-lg">
-            Slik hjelper Partolken dere med å finne tilbake til hverandre.
+            Slik hjelper vi dere med å finne tilbake til hverandre.
           </p>
         </div>
 
