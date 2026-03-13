@@ -27,6 +27,7 @@ const Index = () => {
       <TestimonialsSection />
       <StartpakkeSection />
       <HjertestarterSection />
+      <AboutMariaSection />
       <FAQSection />
       <FinalCTASection />
       <ContactSection />

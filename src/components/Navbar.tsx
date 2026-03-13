@@ -3,10 +3,12 @@ import logo from "@/assets/partolken-logo.png";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "#hva-er-partolking", label: "Partolking" },
+  { href: "#vi-tilbyr", label: "Vi tilbyr" },
+  { href: "#hva-er-partolking", label: "Mer enn parterapi" },
   { href: "#hjertestarter", label: "Hjertestarter" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#om-oss", label: "Om oss" },
   { href: "#kontakt", label: "Kontakt" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 const Navbar = () => {

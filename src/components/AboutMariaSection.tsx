@@ -10,7 +10,7 @@ const trustPoints = [
 
 const AboutMariaSection = () => {
   return (
-    <section id="om-maria" className="py-16 md:py-24">
+    <section id="om-oss" className="py-16 md:py-24">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div className="rounded-2xl overflow-hidden shadow-lg">
