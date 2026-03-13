@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Send, Clock, ShieldCheck, Phone } from "lucide-react";
-import mariaImg from "@/assets/maria-bok.jpg";
+import mariaImg from "@/assets/maria-outdoor.jpg";
 
 const ContactSection = () => {
   const [name, setName] = useState("");

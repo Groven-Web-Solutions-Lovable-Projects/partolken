@@ -27,12 +27,10 @@ const Index = () => {
       <TestimonialsSection />
       <StartpakkeSection />
       <HjertestarterSection />
-      <ContactSection />
-      <NewsletterSection />
-      <ForedragSection />
-      <AboutMariaSection />
       <FAQSection />
       <FinalCTASection />
+      <ContactSection />
+      <Footer />
       <Footer />
     </div>
   );
