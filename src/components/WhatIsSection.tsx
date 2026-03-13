@@ -1,4 +1,5 @@
 import { ShieldCheck, Ear, Wrench, CalendarHeart } from "lucide-react";
+import mariaImg from "@/assets/samtale.jpg";
 
 const benefits = [
   {
@@ -29,44 +30,60 @@ const benefits = [
 
 const WhatIsSection = () => {
   return (
-    <section id="hva-er-partolking" className="py-20 md:py-28 bg-secondary/20 relative overflow-hidden">
-      {/* Green accent decorations */}
-      <div className="absolute top-0 right-0 w-80 h-80 bg-secondary/20 rounded-full translate-x-1/3 -translate-y-1/3 blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/15 rounded-full -translate-x-1/3 translate-y-1/3 blur-3xl" />
-
-      <div className="container relative z-10 space-y-14">
-        {/* Bridge headline – direct answer to previous section */}
+    <section id="hva-er-partolking" className="py-20 md:py-28 bg-card">
+      <div className="container space-y-16">
+        {/* Bridge headline */}
         <div className="text-center max-w-2xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 bg-secondary/30 text-secondary-foreground px-4 py-1.5 rounded-full text-sm font-semibold">
-            <span className="w-2 h-2 rounded-full bg-secondary-foreground/60 animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-secondary/25 px-4 py-1.5 rounded-full text-sm font-semibold text-secondary-foreground">
+            <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
             Det finnes en vei videre
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
             Dere trenger ikke ha det slik.
-            <br />
-            <span className="text-secondary-foreground/80">Slik hjelper Partolken dere.</span>
           </h2>
+          <p className="text-muted-foreground leading-relaxed text-lg">
+            Slik hjelper Partolken dere med å finne tilbake til hverandre.
+          </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {benefits.map((b, i) => (
-            <div
-              key={i}
-              className="group bg-card rounded-2xl p-8 border border-secondary/40 shadow-sm hover:shadow-lg hover:border-secondary transition-all duration-300"
-            >
-              <div className="w-12 h-12 rounded-xl bg-secondary/30 flex items-center justify-center mb-5 group-hover:bg-secondary/50 transition-colors">
-                <b.icon className="w-6 h-6 text-secondary-foreground" />
-              </div>
-              <h3 className="text-lg font-bold text-foreground mb-2">
-                {b.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {b.description}
-              </p>
+        {/* Image + benefits grid */}
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+          {/* Maria image */}
+          <div className="relative">
+            <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-secondary/30">
+              <img
+                src={mariaImg}
+                alt="Maria i samtale med par"
+                className="w-full h-[420px] object-cover"
+              />
             </div>
-          ))}
+            {/* Green accent float */}
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-secondary/20 rounded-full blur-2xl" />
+            <div className="absolute -top-4 -left-4 w-16 h-16 bg-secondary/15 rounded-full blur-xl" />
+          </div>
+
+          {/* Benefits */}
+          <div className="space-y-5">
+            {benefits.map((b, i) => (
+              <div
+                key={i}
+                className="group flex gap-5 p-5 rounded-2xl hover:bg-secondary/[0.08] transition-colors duration-200"
+              >
+                <div className="w-12 h-12 rounded-xl bg-secondary/25 flex items-center justify-center shrink-0 group-hover:bg-secondary/40 transition-colors">
+                  <b.icon className="w-6 h-6 text-secondary-foreground" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-foreground mb-1">{b.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {b.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
+        {/* CTA */}
         <div className="text-center space-y-3">
           <a
             href="#kontakt"
