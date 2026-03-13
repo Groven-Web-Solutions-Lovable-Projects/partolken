@@ -1,4 +1,5 @@
 import heroImage from "@/assets/parsamtale.jpg";
+import { Star, Users } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -28,6 +29,42 @@ const HeroSection = () => {
               >
                 Les om Hjertestarter
               </a>
+            </div>
+
+            {/* Trust bar */}
+            <div className="flex items-center gap-3 pt-2">
+              <div className="flex -space-x-2">
+                {[...Array(5)].map((_, i) => (
+                  <div
+                    key={i}
+                    className="w-8 h-8 rounded-full bg-secondary/60 border-2 border-background flex items-center justify-center"
+                  >
+                    <Users className="w-4 h-4 text-primary/70" />
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+                ))}
+              </div>
+              <span className="text-sm text-muted-foreground">Anbefalt av par over hele Norge</span>
+            </div>
+
+            {/* Skimmable quotes */}
+            <div className="flex flex-wrap gap-2 pt-1">
+              {[
+                "«Vi har aldri hatt det bedre»",
+                "«Et mirakel for forholdet vårt»",
+                "«Forandring allerede etter 2 uker»",
+              ].map((q, i) => (
+                <span
+                  key={i}
+                  className="text-xs text-muted-foreground bg-card border border-border rounded-full px-3 py-1.5 italic"
+                >
+                  {q}
+                </span>
+              ))}
             </div>
           </div>
           <div className="relative animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
