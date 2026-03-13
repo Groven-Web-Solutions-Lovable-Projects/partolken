@@ -6,7 +6,7 @@ const benefits = [
     icon: Ear,
     title: "Noen som virkelig lytter",
     description:
-      "Maria lytter uten å dømme – og hjelper dere å høre hverandre på nytt.",
+      "Vi lytter uten å dømme – og hjelper dere å høre hverandre på nytt.",
   },
   {
     icon: ShieldCheck,
