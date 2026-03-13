@@ -23,7 +23,7 @@ const Index = () => {
       <SocialProofBanner />
       <RecognitionSection />
       <WhatIsSection />
-      <WhyChooseSection />
+      
       <TestimonialsSection />
       <StartpakkeSection />
       <HjertestarterSection />
