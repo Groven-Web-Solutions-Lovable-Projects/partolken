@@ -17,7 +17,7 @@ const HeroSection = () => {
               Når forholdet har låst seg, finnes det en vei tilbake.
             </h1>
             <p className="text-lg text-foreground leading-relaxed max-w-lg">
-              Partolken hjelper par med å forstå hverandre bedre, bryte fastlåste mønstre og finne tilbake til nærhet, trygghet og kjærlighet.
+              Partolking går lenger enn tradisjonell parterapi. Vi gir dere konkrete verktøy, handlingsrettede tiltak og en tydelig vei tilbake til nærhet, trygghet og kjærlighet.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
