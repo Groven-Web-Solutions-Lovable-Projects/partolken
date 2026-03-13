@@ -32,7 +32,7 @@ const StartpakkeSection = () => {
               ))}
             </ul>
             <a
-              href="#"
+              href="#kontakt"
               className="inline-block border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               Les mer om startpakken

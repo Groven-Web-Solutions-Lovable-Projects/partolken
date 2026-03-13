@@ -35,7 +35,7 @@ const HjertestarterSection = () => {
                 Bestill boken
               </a>
               <a
-                href="#"
+                href="#kontakt"
                 className="border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-colors text-center"
               >
                 Les mer om Hjertestarter
