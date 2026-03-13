@@ -75,7 +75,7 @@ const RecognitionSection = () => {
           <div className="relative hidden md:block">
             <div className="rounded-3xl overflow-hidden shadow-xl">
               <img
-                src={recognitionArt}
+                src={recognitionPhoto}
                 alt="Par i samtale"
                 className="w-full h-[500px] object-cover"
               />
