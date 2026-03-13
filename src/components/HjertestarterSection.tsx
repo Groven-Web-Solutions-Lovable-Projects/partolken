@@ -29,13 +29,13 @@ const HjertestarterSection = () => {
             </ul>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#"
+                href="#kontakt"
                 className="bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity text-center"
               >
                 Bestill boken
               </a>
               <a
-                href="#"
+                href="#kontakt"
                 className="border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-colors text-center"
               >
                 Les mer om Hjertestarter

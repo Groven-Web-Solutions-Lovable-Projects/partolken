@@ -5,9 +5,8 @@ import { Menu, X } from "lucide-react";
 const links = [
   { href: "#hva-er-partolking", label: "Partolking" },
   { href: "#hjertestarter", label: "Hjertestarter" },
-  { href: "#foredrag", label: "Foredrag" },
-  { href: "#om-maria", label: "Om Maria" },
   { href: "#faq", label: "FAQ" },
+  { href: "#kontakt", label: "Kontakt" },
 ];
 
 const Navbar = () => {
