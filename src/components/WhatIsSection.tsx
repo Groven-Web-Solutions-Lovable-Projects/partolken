@@ -29,28 +29,33 @@ const benefits = [
 
 const WhatIsSection = () => {
   return (
-    <section id="hva-er-partolking" className="py-20 md:py-28">
-      <div className="container space-y-14">
-        <div className="text-center max-w-2xl mx-auto space-y-3">
-          <p className="text-accent font-semibold text-sm tracking-widest uppercase">
-            Løsningen
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            Dette får dere hos Partolken
+    <section id="hva-er-partolking" className="py-20 md:py-28 bg-secondary/20 relative overflow-hidden">
+      {/* Green accent decorations */}
+      <div className="absolute top-0 right-0 w-80 h-80 bg-secondary/20 rounded-full translate-x-1/3 -translate-y-1/3 blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/15 rounded-full -translate-x-1/3 translate-y-1/3 blur-3xl" />
+
+      <div className="container relative z-10 space-y-14">
+        {/* Bridge headline – direct answer to previous section */}
+        <div className="text-center max-w-2xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 bg-secondary/30 text-secondary-foreground px-4 py-1.5 rounded-full text-sm font-semibold">
+            <span className="w-2 h-2 rounded-full bg-secondary-foreground/60 animate-pulse" />
+            Det finnes en vei videre
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
+            Dere trenger ikke ha det slik.
+            <br />
+            <span className="text-secondary-foreground/80">Slik hjelper Partolken dere.</span>
           </h2>
-          <p className="text-muted-foreground leading-relaxed">
-            Partolken gir dere det dere trenger for å forstå hverandre igjen – og bygge et forhold som varer.
-          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {benefits.map((b, i) => (
             <div
               key={i}
-              className="group bg-card rounded-2xl p-8 border border-border shadow-sm hover:shadow-lg hover:border-accent/30 transition-all duration-300"
+              className="group bg-card rounded-2xl p-8 border border-secondary/40 shadow-sm hover:shadow-lg hover:border-secondary transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors">
-                <b.icon className="w-6 h-6 text-accent" />
+              <div className="w-12 h-12 rounded-xl bg-secondary/30 flex items-center justify-center mb-5 group-hover:bg-secondary/50 transition-colors">
+                <b.icon className="w-6 h-6 text-secondary-foreground" />
               </div>
               <h3 className="text-lg font-bold text-foreground mb-2">
                 {b.title}
