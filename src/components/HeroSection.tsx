@@ -1,11 +1,11 @@
-import heroImage from "@/assets/maria-outdoor.jpg";
-import avatar1 from "@/assets/avatar-1.jpg";
-import avatar2 from "@/assets/avatar-2.jpg";
-import avatar3 from "@/assets/avatar-3.jpg";
-import avatar4 from "@/assets/avatar-4.jpg";
+import heroImage from "@/assets/maria-hero.png";
+import couple1 from "@/assets/couple-1.jpg";
+import couple2 from "@/assets/couple-2.jpg";
+import couple3 from "@/assets/couple-3.jpg";
+import couple4 from "@/assets/couple-4.jpg";
 import { Star } from "lucide-react";
 
-const avatars = [avatar1, avatar2, avatar3, avatar4];
+const avatars = [couple1, couple2, couple3, couple4];
 
 const HeroSection = () => {
   return (
